@@ -18,7 +18,7 @@ Sanity checks:
 
 Once you've got the right hardware and software:
 
-    git clone https://github.com/filipe3x/testcoin4.git
+    git clone https://github.com/spudscoin/potatocoin.git
     git clone https://github.com/devrandom/gitian-builder.git gitian
     mkdir gitian/inputs
     cd gitian/inputs
@@ -49,24 +49,24 @@ Now: (this will take some time even in a good machine)
 
 Build Linux release:
 
-    cd testcoin4
+    cd potatocoin
     git pull
     cd ../gitian
     git pull
-    sudo ./bin/gbuild --commit testcoin4=HEAD ../testcoin4/contrib/gitian-descriptors/gitian.yml
+    sudo ./bin/gbuild --commit potatocoin=HEAD ../potatocoin/contrib/gitian-descriptors/gitian.yml
 
 Build Win32 dependencies: (only needs to be done once, or when dependency versions change)
 
-    sudo ./bin/gbuild --commit testcoin4=HEAD ../testcoin4/contrib/gitian-descriptors/boost-win32.yml
+    sudo ./bin/gbuild --commit potatocoin=HEAD ../potatocoin/contrib/gitian-descriptors/boost-win32.yml
     sudo mv build/out/*.* inputs/
-    sudo ./bin/gbuild --commit testcoin4=HEAD ../testcoin4/contrib/gitian-descriptors/deps-win32.yml
+    sudo ./bin/gbuild --commit potatocoin=HEAD ../potatocoin/contrib/gitian-descriptors/deps-win32.yml
     sudo mv build/out/*.* inputs/
-    sudo ./bin/gbuild --commit testcoin4=HEAD ../testcoin4/contrib/gitian-descriptors/qt-win32.yml
+    sudo ./bin/gbuild --commit potatocoin=HEAD ../potatocoin/contrib/gitian-descriptors/qt-win32.yml
     sudo mv build/out/*.* inputs/
 
 Build Win32 release: (run this everytime you do changes to the code. Dont forget to "git push" the new code first, otherwise it won't work!)
 
-    sudo ./bin/gbuild --commit testcoin4=HEAD ../testcoin4/contrib/gitian-descriptors/gitian-win32.yml
+    sudo ./bin/gbuild --commit potatocoin=HEAD ../potatocoin/contrib/gitian-descriptors/gitian-win32.yml
 
 ---------------------
 
