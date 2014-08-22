@@ -1,0 +1,9 @@
+Building potatocoin
+
+See doc/readme-qt.rst for instructions on building potatocoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of potatocoin.
+
+See doc/build-*.txt for instructions on building potatocoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of potatocoin.

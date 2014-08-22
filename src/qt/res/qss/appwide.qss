@@ -1,0 +1,4 @@
+m_pMyWidget = new QWidget(this);
+m_pMyWidget->setGeometry(0,0,300,100);
+m_pMyWidget->setStyleSheet("background-color:black;");
+m_pMyWidget->show();
