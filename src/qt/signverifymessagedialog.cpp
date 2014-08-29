@@ -24,10 +24,10 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
 
 #if (QT_VERSION >= 0x040700)
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->addressIn_SM->setPlaceholderText(tr("Enter a potatocoin address (e.g. Xer4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)"));
+    ui->addressIn_SM->setPlaceholderText(tr("Enter a potatocoin address (e.g. PW63ETUn87d5CNT8NLZDmpEP3d7PiJkBJD)"));
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
 
-    ui->addressIn_VM->setPlaceholderText(tr("Enter a potatocoin address (e.g. Xer4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)"));
+    ui->addressIn_VM->setPlaceholderText(tr("Enter a potatocoin address (e.g. PW63ETUn87d5CNT8NLZDmpEP3d7PiJkBJD)"));
     ui->signatureIn_VM->setPlaceholderText(tr("Enter potatocoin signature"));
 #endif
 
